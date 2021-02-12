@@ -44,11 +44,11 @@ enum custom_keycodes {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_ergodox_pretty(
-    KC_ESCAPE,         KC_1,               KC_2,               KC_3,               KC_4,               KC_5,           TG(5),                                          TG(5),          KC_6,           KC_7,               KC_8,               KC_9,               KC_0,               KC_BSPACE,
-    KC_TAB,            KC_Q,               KC_D,               KC_R,               KC_W,               KC_B,           KC_CAPSLOCK,                                    KC_DELETE,      KC_J,           KC_F,               KC_U,               KC_P,               KC_SCOLON,          KC_BSLASH,
-    LCTL_T(KC_ESCAPE), MT(MOD_LGUI, KC_A), MT(MOD_LALT, KC_S), MT(MOD_LSFT ,KC_H), MT(MOD_LCTL, KC_T), KC_G,                                                                           KC_Y,           MT(MOD_RCTL, KC_N), MT(MOD_RSFT, KC_E), MT(MOD_LALT, KC_O), MT(MOD_RGUI, KC_I), RCTL_T(KC_QUOTE),
-    KC_LSHIFT,         KC_Z,               KC_X,               KC_M,               KC_C,               KC_V,           KC_INSERT,                                      KC_BSPACE,      KC_K,           KC_L,               KC_COMMA,           KC_DOT,             KC_SLASH,           KC_RSHIFT,
-    KC_LCTRL,          KC_LGUI,            TG(3),              TG(2),              TG(1),                                                                                                          TG(2),          TG(3),          KC_RALT,        KC_LGUI,        TG(4),
+    KC_ESCAPE,         KC_1,        KC_2,        KC_3,         KC_4,         KC_5,           TG(5),                                          TG(5),          KC_6,           KC_7,         KC_8,         KC_9,        KC_0,         KC_BSPACE,
+    KC_TAB,            KC_Q,        KC_D,        KC_R,         KC_W,         KC_B,           KC_CAPSLOCK,                                    KC_DELETE,      KC_J,           KC_F,         KC_U,         KC_P,        KC_SCOLON,    KC_BSLASH,
+    LCTL_T(KC_ESCAPE), GUI_T(KC_A), ALT_T(KC_S), LSFT_T(KC_H), LCTL_T(KC_T), KC_G,                                                                           KC_Y,           RCTL_T(KC_N), RSFT_T(KC_E), ALT_T(KC_O), LGUI_T(KC_I), RCTL_T(KC_QUOTE),
+    KC_LSHIFT,         KC_Z,        KC_X,        KC_M,         KC_C,         KC_V,           KC_INSERT,                                      KC_BSPACE,      KC_K,           KC_L,         KC_COMMA,     KC_DOT,      KC_SLASH,     KC_RSHIFT,
+    KC_LCTRL,          KC_LGUI,     TG(3),       TG(2),        TG(1),                                                                                                        TG(2),        TG(3),        KC_RALT,     KC_LGUI,      TG(4),
                                                                                                     LALT(KC_PSCREEN),KC_PSCREEN,     KC_AUDIO_VOL_UP,KC_AUDIO_VOL_DOWN,
                                                                                                                     LGUI(KC_SPACE), KC_TRANSPARENT,
                                                                                     LALT_T(KC_SPACE),LT(3,KC_BSPACE),LALT(KC_SPACE), TG(1),          LT(3,KC_TAB),   LCTL_T(KC_ENTER)
