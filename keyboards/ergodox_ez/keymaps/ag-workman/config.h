@@ -4,3 +4,4 @@
 */
 #define ORYX_CONFIGURATOR
 #define FIRMWARE_VERSION u8"vAY0a/MvNWL"
+#define TAPPING_TERM    230
